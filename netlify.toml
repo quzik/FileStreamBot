@@ -1,0 +1,19 @@
+[build]
+  # The directory containing your site’s production build (e.g., 'dist', 'build', etc.)
+  publish = "public"
+  
+  # The directory for build-related scripts (e.g., 'src', 'app', etc.)
+  functions = "functions"
+  
+  # The build command to run (can be something like 'npm run build' for JavaScript-based frameworks)
+  command = "npm run build"
+
+[[redirects]]
+  # Redirect from one URL to another
+  from = "/old-page"
+  to = "/new-page"
+  status = 301
+
+[[plugins]]
+  # Define plugins that are used with your Netlify site
+  package = "@netlify/plugin-example"
